@@ -1,0 +1,135 @@
+
+:root{
+    --dark-white:#fafafa;
+    --teal:#86b3a6;
+    --green:#017143;
+}
+
+.cm-header{
+    background-color: var(--dark-white);
+
+    
+}
+
+
+.cm-header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    padding: 10px 0px;
+}
+
+.cm-header-nav-img{
+    width: 80px;
+}
+
+.cm-header-nav-ul{
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    list-style: none;
+    
+}
+
+
+.cm-header-nav-ul-li{
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 1s ease;
+    color: var(--green);
+    text-transform: uppercase;
+
+}
+
+.cm-header-nav-ul-li:hover{
+    background-color: var(--green);
+    color: var(--dark-white);    
+    transition: 1s ease;
+}
+
+
+.cm-header-nav-imgBurger{
+    display: none;
+}
+
+.cm-header-nav-imgExitBurger{
+    display: none;
+}
+
+@media (max-width: 1000px) {
+
+    
+
+    .cm-header-nav-imgBurger {
+        display: block;
+        cursor: pointer;
+        
+
+    }
+    .cm-header-nav-ul{
+        display: none;
+        animation: openMenu 0.3s ease forwards; /* Animación de apertura del menú */
+    }
+
+        /*inyect js*/
+    .cm-header-nav-imgBurguer-active{
+        
+        display: block;
+        background-color: var(--dark-white);
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        
+        
+       
+        
+    }
+
+    .cm-header-nav-imgExitBurguer-active{
+        display: block;
+        z-index: 1000;
+        cursor: pointer;
+        
+    }
+
+    .cm-header-nav-ul-li{
+        font-size: 1em;
+    }
+   
+}
+
+@keyframes openMenu {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+@keyframes closeMenu {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}

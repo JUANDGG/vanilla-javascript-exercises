@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/cm-header.css">
+    <link rel="stylesheet" href="./assets/css/cm-main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Starbusk Coffee</title>
+</head>
+<body>
+
+    <div class="cm" id="containerMain">   
+        <header class="cm-header">
+            <nav class="cm-header-nav">
+                <img src="./assets/img/logo.png" class="cm-header-nav-img"/>
+                <ul class="cm-header-nav-ul" id="menuHeader">
+                    <li class="cm-header-nav-ul-li">Home</li>
+                    <li class="cm-header-nav-ul-li">Menu</li>
+                    <li class="cm-header-nav-ul-li">News</li>
+                    <li class="cm-header-nav-ul-li">Contact</li>
+                </ul>
+                <img src="./assets/svg/burguerMenu.svg" alt="burguerMenu" id="burguerMenu" class="cm-header-nav-imgBurger">
+                <img src="./assets/svg/exitMenuBurguer.svg" alt="exitMenuBurger" id="exitMenuBurger" class="cm-header-nav-imgExitBurger">
+            </nav>
+        </header>         
+        <main class="cm-main">
+            <div class="cm-main-div" id="coffeeInformationContainer"></div>
+            <ul class="cm-main-ul" id="coffeeNavigationButtons"></ul>
+        </main>
+    </div>
+
+
+    <script src="./js/index.js" type="module"></script>
+    <script src="./js/burguerMenu.js"></script>
+</body>
+</html>
